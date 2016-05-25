@@ -105,6 +105,10 @@ nav {
 }
 
 .logo {
+
+	@include screen-sm {
+		margin-left: 8px;
+	}
 }
 
 .menu-visible {

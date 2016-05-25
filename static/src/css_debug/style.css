@@ -192,6 +192,12 @@ nav .menu-items {
   }
 }
 
+@media (max-width: 33.9em) {
+  .logo {
+    margin-left: 8px;
+  }
+}
+
 .menu-visible {
   display: block !important;
 }
@@ -228,7 +234,7 @@ nav .menu-items {
 }
 
 #product-home-background {
-  background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/product-home-background.jpg);
+  background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/background-hires.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -239,7 +245,7 @@ nav .menu-items {
 }
 @media (max-width: 33.9em) {
   #product-home-background {
-    background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/product-home-background-mobile.jpg);
+    background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/background-mobile.jpg);
   }
 }
 #product-home-background:after {
@@ -277,7 +283,8 @@ nav .menu-items {
 }
 
 .product-image {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px rgba(27, 27, 27, 0.4);
 }
 
 .order-header {
