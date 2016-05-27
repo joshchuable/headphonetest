@@ -40,6 +40,19 @@ mail = Mail(app)
 def index():
 	return render_template("home.html")
 
+# Individual test product pages
+@app.route("/rialtoheadphones")
+def headphones():
+    return render_template("headphones.html")
+
+#@app.route("/macha")
+#def matcha():
+#    return render_template("macha.html")
+
+#@app.route("/edc")
+#def edc():
+#    return render_template("edc.html")
+
 @app.route('/checkout')
 def checkout():
     return render_template("checkout/checkout.html", key=stripe_keys['publishable_key'])
