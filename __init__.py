@@ -10,7 +10,7 @@ from flask_mail import Mail, Message
 from pscripts.send_email import ContactForm
 
 #Paypal configs
-config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.trumpbobble.com",
+config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.Rialto Exchange.com",
                       API_PASSWORD = "VHD5LBSTVY5F2LVY",
                       API_SIGNATURE = "AFcWxV21C7fd0v3bYYYRCpSSRl31A31AGwDGKoQXB-ZlN1VRvKP2zDyu",
                       DEBUG_LEVEL=1)
@@ -31,7 +31,7 @@ app.secret_key = 'the_R4nD0M_Things___4keys--true'
 app.config['MAIL_SERVER'] = 'smtp.zoho.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = 'admin@trumpbobble.com'
+app.config['MAIL_USERNAME'] = 'admin@Rialto Exchange.com'
 app.config['MAIL_PASSWORD'] = 'taoist-terrier-sleeve-tingly-debate'
 # Mailer
 mail = Mail(app)
@@ -40,22 +40,38 @@ mail = Mail(app)
 def index():
 	return render_template("home.html")
 
+
+#pricing and naming configs
+def productname(product):
+    namelist = {"headphones": "The Rialto Headphone"}
+    return namelist[product]
+
+def price(product):
+    pricelist = {"headphones": 24.99}
+    return pricelist[product]
+
+
 # Individual test product pages
-@app.route("/rialtoheadphones")
-def headphones():
-    return render_template("headphones.html")
+@app.route("/prod/<product>")
+def prod(product):
+    intro = product + "/" + product + "_0" + ".html"
+    section1 = product + "/" + product + "_1" + ".html"
+    section2 = product + "/" + product + "_2" + ".html"
+    section3 = product + "/" + product + "_3" + ".html"
+    name = productname(product)
+    productprice = price(product)
+    return render_template("home2.html", name=name, price=productprice, product=product, intro=intro, section1=section1, section2=section2, section3=section3)
+#@app.route('/checkout')
+#def checkout():
+#    return render_template("checkout/checkout.html", key=stripe_keys['publishable_key'])
 
-#@app.route("/macha")
-#def matcha():
-#    return render_template("macha.html")
 
-#@app.route("/edc")
-#def edc():
-#    return render_template("edc.html")
-
-@app.route('/checkout')
-def checkout():
-    return render_template("checkout/checkout.html", key=stripe_keys['publishable_key'])
+@app.route('/checkout/<product>')
+def checkout(product):
+    section4 = product + "/" + product + "_4" + ".html"
+    name = productname(product)
+    productprice = price(product)
+    return render_template("checkout/checkout2.html",section4=section4, name=name, price=productprice, product=product, key=stripe_keys['publishable_key'])
 
 @app.route('/contact', methods=['POST','GET'])
 def contact():
@@ -64,7 +80,7 @@ def contact():
     if form.validate() == False:
         return 'Please fill out all sections of the form and resubmit.'
     else:
-        msg = Message(form.subject.data, sender='admin@trumpbobble.com', recipients=['admin@trumpbobble.com','rye@trumpbobble.com'])
+        msg = Message(form.subject.data, sender='admin@Rialto Exchange.com', recipients=['admin@Rialto Exchange.com','rye@Rialto Exchange.com'])
         msg.body = """
         From: %s <%s>
         %s
@@ -87,7 +103,7 @@ def charge(amount):
                 source=token
             )
     if country not in ["US", "United States"] or state in ['Alaska','AK','Hawaii','HI']:
-        return render_template('error.html', error="Sorry, we only take orders from the continental U.S. at this time. Your card will not be charged. For international inquiries, please email us at contact@trumpbobble.com")
+        return render_template('error.html', error="Sorry, we only take orders from the continental U.S. at this time. Your card will not be charged. For international inquiries, please email us at contact@Rialto Exchange.com")
     else:
         try:
             charge = stripe.Charge.create(
@@ -96,13 +112,13 @@ def charge(amount):
                 currency='usd',
             )
 
-            return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@trumpbobble.com and we'll let you know when we have more in store!")
+            return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@Rialto Exchange.com and we'll let you know when we have more in store!")
         except stripe.CardError:
             return render_template('error.html', error="Your card swas declined. Please try again or call your credit card company.")
 
 @app.route("/paypal/redirect/<amount>")
 def paypal_redirect(amount):
-    return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@trumpbobble.com and we'll let you know when we have more in store!")
+    return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@Rialto Exchange.com and we'll let you know when we have more in store!")
 
 @app.route("/paypal/confirm")
 def paypal_confirm():
