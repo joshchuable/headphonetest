@@ -36,20 +36,33 @@ app.config['MAIL_PASSWORD'] = 'taoist-terrier-sleeve-tingly-debate'
 # Mailer
 mail = Mail(app)
 
+namelist = {"headphones": "The Rialto Headphone"}
+pricelist = {"headphones": 24.99}
+
 @app.route("/")
 def index():
-	return render_template("home.html")
+    products = []
+    i = 0
+    while i <= 3:
+        for key, value in namelist.iteritems():
+            products.append(key)
+            i = i + 1
+    product1 = productname(products[1])
+    product2 = productname(products[2])
+    product3 = productname(products[3])
+    price1 = price(product1)
+    price2 = price(product2)
+    price3 = price(product3)
+    section1 = products[1] + "/" + products[1] + "_4" + ".html"
+    section2 = products[2] + "/" + products[2] + "_4" + ".html"
+    section3 = products[3] + "/" + products[3] + "_4" + ".html"
+    return render_template("home2.html", section1=section1, section2=section2, section3=section3)
 
-
-#pricing and naming configs
 def productname(product):
-    namelist = {"headphones": "The Rialto Headphone"}
     return namelist[product]
 
 def price(product):
-    pricelist = {"headphones": 24.99}
     return pricelist[product]
-
 
 # Individual test product pages
 @app.route("/prod/<product>")
@@ -61,17 +74,20 @@ def prod(product):
     name = productname(product)
     productprice = price(product)
     return render_template("home2.html", name=name, price=productprice, product=product, intro=intro, section1=section1, section2=section2, section3=section3)
-#@app.route('/checkout')
-#def checkout():
-#    return render_template("checkout/checkout.html", key=stripe_keys['publishable_key'])
-
 
 @app.route('/checkout/<product>')
 def checkout(product):
     section4 = product + "/" + product + "_4" + ".html"
     name = productname(product)
     productprice = price(product)
-    return render_template("checkout/checkout2.html",section4=section4, name=name, price=productprice, product=product, key=stripe_keys['publishable_key'])
+    return render_template("checkout/checkout2.html",section4=section4, name=name, price=productprice, product=product)
+
+@app.route('/buy/<product>')
+def buy(product):
+    section4 = product + "/" + product + "_4" + ".html"
+    name = productname(product)
+    return render_template("error.html",error="Whoops, we're all out of stock. Leave us your email and we'll let you know when we restock!", name=name, product=product)
+
 
 @app.route('/contact', methods=['POST','GET'])
 def contact():
@@ -118,7 +134,7 @@ def charge(amount):
 
 @app.route("/paypal/redirect/<amount>")
 def paypal_redirect(amount):
-    return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@Rialto Exchange.com and we'll let you know when we have more in store!")
+    return render_template('error.html',error="Whoops, we're all out of stock. Leave us your email and we'll let you know when we restock!")
 
 @app.route("/paypal/confirm")
 def paypal_confirm():
