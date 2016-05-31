@@ -86,7 +86,7 @@ def checkout(product):
     section4 = product + "/" + product + "_4" + ".html"
     name = productname(product)
     productprice = price(product)
-    return render_template("checkout/checkout2.html",section4=section4, name=name, price=productprice, product=product)
+    return render_template("checkout/checkout.html",section4=section4, name=name, price=productprice, product=product)
 
 @app.route('/buy/<product>')
 def buy(product):
