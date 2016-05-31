@@ -41,22 +41,32 @@ pricelist = {"headphones": 24.99}
 
 @app.route("/")
 def index():
-    products = []
-    i = 0
-    while i <= 3:
-        for key, value in namelist.iteritems():
-            products.append(key)
-            i = i + 1
-    product1 = productname(products[1])
-    product2 = productname(products[2])
-    product3 = productname(products[3])
-    price1 = price(product1)
-    price2 = price(product2)
-    price3 = price(product3)
-    section1 = products[1] + "/" + products[1] + "_4" + ".html"
-    section2 = products[2] + "/" + products[2] + "_4" + ".html"
-    section3 = products[3] + "/" + products[3] + "_4" + ".html"
-    return render_template("home2.html", section1=section1, section2=section2, section3=section3)
+    product = "headphones"
+    name = productname(product)
+    productprice = price(product)
+    return render_template("home.html", name=name, price=productprice, product=product)
+
+#@app.route("/")
+#def index():
+#    products = []
+#    i = 0
+#    while i <= 3:
+#        for key in namelist:
+#            products.append(key)
+#            i = i + 1
+#    product1 = products[1]
+#    product2 = products[2]
+#    product3 = products[3]
+#    productname1 = productname(product1)
+#    productname2 = productname(product2)
+#    productname3 = productname(product3)
+#    price1 = price(product1)
+#    price2 = price(product2)
+#    price3 = price(product3)
+#    section1 = product1 + "/" + product1 + "_4" + ".html"
+#    section2 = product2 + "/" + product2 + "_4" + ".html"
+#    section3 = product3 + "/" + product3 + "_4" + ".html"
+#    return render_template("home3.html", section1=section1, product1=product1)
 
 def productname(product):
     return namelist[product]
@@ -67,13 +77,9 @@ def price(product):
 # Individual test product pages
 @app.route("/prod/<product>")
 def prod(product):
-    intro = product + "/" + product + "_0" + ".html"
-    section1 = product + "/" + product + "_1" + ".html"
-    section2 = product + "/" + product + "_2" + ".html"
-    section3 = product + "/" + product + "_3" + ".html"
     name = productname(product)
     productprice = price(product)
-    return render_template("home2.html", name=name, price=productprice, product=product, intro=intro, section1=section1, section2=section2, section3=section3)
+    return render_template("home.html", name=name, price=productprice, product=product)
 
 @app.route('/checkout/<product>')
 def checkout(product):

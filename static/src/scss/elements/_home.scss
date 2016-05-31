@@ -37,6 +37,45 @@
 	}
 }
 
+#product-home-headphones {
+	background-image:
+		linear-gradient(
+			rgba($black,.2),
+			rgba($black,.3)
+		),
+		url(../img/background-hires.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	// padding: 0px;
+	// margin: 0;
+	z-index: -10;
+	position: relative;
+	color: $white;
+
+	@include screen-sm {
+		background-image:
+			linear-gradient(
+				rgba($black,.2),
+				rgba($black,.3)
+			),
+			url(../img/background-mobile.jpg);
+	}
+
+	&:after {
+		    content: "";
+		    background: url(../img/crossed_stripes.png) repeat;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    position: absolute;
+		    opacity: .6;
+		    z-index: -4;
+	}
+}
+
 .top-row {
 	text-align: center;
 	position: relative;
