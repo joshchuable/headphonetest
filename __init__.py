@@ -27,35 +27,6 @@ def index():
     productprice = price(product)
     return render_template("home.html", name=name, price=productprice, product=product)
 
-#For future development. This code should take multiple products to put on the home page.
-#@app.route("/")
-#def index():
-#    products = []
-#    i = 0
-#    while i <= 3:
-#        for key in namelist:
-#            products.append(key)
-#            i = i + 1
-#    product1 = products[1]
-#    product2 = products[2]
-#    product3 = products[3]
-#    productname1 = productname(product1)
-#    productname2 = productname(product2)
-#    productname3 = productname(product3)
-#    price1 = price(product1)
-#    price2 = price(product2)
-#    price3 = price(product3)
-#    section1 = product1 + "/" + product1 + "_4" + ".html"
-#    section2 = product2 + "/" + product2 + "_4" + ".html"
-#    section3 = product3 + "/" + product3 + "_4" + ".html"
-#    return render_template("home3.html", section1=section1, product1=product1)
-
-def productname(product):
-    return namelist[product]
-
-def price(product):
-    return pricelist[product]
-
 # Individual test product pages
 @app.route("/prod/<product>")
 def prod(product):
@@ -96,6 +67,39 @@ def contact():
   else:
     return render_template('contact/contact.html', form=form)
 
+@app.route("/terms/")
+def terms():
+    return render_template("terms/terms.html")
+
+#helper functions
+def productname(product):
+    return namelist[product]
+
+def price(product):
+    return pricelist[product]
+
+#For future development. This code should take multiple products to put on the home page.
+#@app.route("/")
+#def index():
+#    products = []
+#    i = 0
+#    while i <= 3:
+#        for key in namelist:
+#            products.append(key)
+#            i = i + 1
+#    product1 = products[1]
+#    product2 = products[2]
+#    product3 = products[3]
+#    productname1 = productname(product1)
+#    productname2 = productname(product2)
+#    productname3 = productname(product3)
+#    price1 = price(product1)
+#    price2 = price(product2)
+#    price3 = price(product3)
+#    section1 = product1 + "/" + product1 + "_4" + ".html"
+#    section2 = product2 + "/" + product2 + "_4" + ".html"
+#    section3 = product3 + "/" + product3 + "_4" + ".html"
+#    return render_template("home3.html", section1=section1, product1=product1)
 
 if __name__ == "__main__":
 	app.run(debug=True)
