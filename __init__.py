@@ -27,13 +27,6 @@ def index():
     productprice = price(product)
     return render_template("home.html", name=name, price=productprice, product=product)
 
-@app.route("/prod/")
-def prod(product):
-    product="headphones"
-    name = productname(product)
-    productprice = price(product)
-    return render_template("home.html", name=name, price=productprice, product=product)
-
 # Individual test product pages
 @app.route("/prod/<product>")
 def prod(product):
