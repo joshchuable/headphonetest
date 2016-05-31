@@ -223,7 +223,7 @@ nav .menu-items {
   background-color: #29D8BD;
   border-radius: 6px;
   font-weight: bold;
-  box-shadow: 0 0 5px rgba(27, 27, 27, 0.1);
+  box-shadow: 0 0 5px rgba(27, 27, 27, 0.2);
   color: #f7f7f7;
   position: relative;
   z-index: 100;
@@ -231,6 +231,8 @@ nav .menu-items {
 .order-now-button:hover {
   background-color: #24c8af;
   cursor: pointer;
+  text-decoration: none;
+  color: #f7f7f7;
 }
 
 #product-home-background {
@@ -249,6 +251,33 @@ nav .menu-items {
   }
 }
 #product-home-background:after {
+  content: "";
+  background: url(../img/crossed_stripes.png) repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: .6;
+  z-index: -4;
+}
+
+#product-home-headphones {
+  background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/background-hires.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -10;
+  position: relative;
+  color: #f7f7f7;
+}
+@media (max-width: 33.9em) {
+  #product-home-headphones {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/background-mobile.jpg);
+  }
+}
+#product-home-headphones:after {
   content: "";
   background: url(../img/crossed_stripes.png) repeat;
   top: 0;

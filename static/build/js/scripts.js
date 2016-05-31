@@ -42,7 +42,7 @@ function update_subtotal_paypal() {
 	var subtotal_two = parseFloat(subtotal).toFixed(2);
 	$('#order-subtotal').text(subtotal_two);
 	var subtotal_fix = parseInt((parseFloat($('#order-subtotal').text()) * 100).toFixed(0));
-	$("#paypal-button").attr("href", '/paypal/redirect/'+subtotal_fix);
+	$("#paypal-button").attr("href", '/buy/{{product}}/'+subtotal_fix);
 }
 $(document).ready(function() {
 	$('.top-container').css('min-height', $(window).height()+'px');

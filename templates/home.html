@@ -10,12 +10,11 @@
 {% set imgpath3 = "/static/build/img/" + product + "_3.jpg" %}
 {% set imgpath4 = "/static/build/img/" + product + "_4.jpg" %}
 {% block content %}
-	
+
 	<div class="container-fluid top-container" id="product-home-background">
 		<div class="row top-row">
 			<div class="col-sm-8 col-sm-offset-2">
 				{% include intro %}
-				<a class="order-now-button" href="/checkout/{{product}}">ORDER NOW</a>
 			</div>
 		</div>
 	</div>
@@ -60,7 +59,9 @@
 				<div class="col-lg-2">
 					<div class="order-wrapper">
 						<p class="section-text">${{price}}</p>
-						<a class="order-now-button" href= "/checkout/{{product}}" onCLick="dataLayer.push({'event': '{{product}}'})">ORDER NOW</a>
+						<a href="/checkout/{{product}}" onCLick="dataLayer.push({'event': '{{product}}'})">
+							<button class="order-now-button" href="/checkout/{{product}}">ORDER NOW</button>
+						</a>
 					</div>
 				</div>
 			</div>

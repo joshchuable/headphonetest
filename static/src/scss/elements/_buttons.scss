@@ -20,7 +20,7 @@
 	background-color: $teal;
 	border-radius: 6px;
 	font-weight: bold;
-	box-shadow: 0 0 5px rgba($black,.1);
+	box-shadow: 0 0 5px rgba($black,.2);
 	color: $white;
 	position: relative;
 	z-index: 100;
@@ -28,5 +28,7 @@
 	&:hover {
 		background-color: darken($teal, 4);
 		cursor: pointer;
+		text-decoration: none;
+		color: $white;
 	}
 }
