@@ -69,7 +69,8 @@ def contact():
 
 @app.route("/terms/")
 def terms():
-    return render_template("terms/terms.html")
+    product="headphones"
+    return render_template("terms/terms.html", product=product)
 
 #helper functions
 def productname(product):
