@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"font",
 				"font-weight"
 			],
 			[
 				"border-",
 				"border-radius"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"top",
@@ -63,7 +63,7 @@
 			"file": "__init__.py",
 			"settings":
 			{
-				"buffer_size": 5451,
+				"buffer_size": 3449,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +79,7 @@
 			"file": "templates/head.html",
 			"settings":
 			{
-				"buffer_size": 841,
+				"buffer_size": 1408,
 				"line_ending": "Windows"
 			}
 		},
@@ -87,7 +87,7 @@
 			"file": "templates/nav.html",
 			"settings":
 			{
-				"buffer_size": 532,
+				"buffer_size": 642,
 				"line_ending": "Windows"
 			}
 		},
@@ -103,7 +103,7 @@
 			"file": "templates/error.html",
 			"settings":
 			{
-				"buffer_size": 347,
+				"buffer_size": 2751,
 				"line_ending": "Windows"
 			}
 		},
@@ -111,7 +111,7 @@
 			"file": "templates/home.html",
 			"settings":
 			{
-				"buffer_size": 3214,
+				"buffer_size": 2361,
 				"line_ending": "Windows"
 			}
 		},
@@ -119,7 +119,7 @@
 			"file": "templates/checkout/checkout.html",
 			"settings":
 			{
-				"buffer_size": 4585,
+				"buffer_size": 1547,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,7 +127,7 @@
 			"file": "templates/terms/terms.html",
 			"settings":
 			{
-				"buffer_size": 18988,
+				"buffer_size": 18721,
 				"line_ending": "Windows"
 			}
 		},
@@ -143,7 +143,7 @@
 			"file": "static/src/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 931,
+				"buffer_size": 965,
 				"line_ending": "Windows"
 			}
 		},
@@ -151,7 +151,7 @@
 			"file": "static/src/js/layout.js",
 			"settings":
 			{
-				"buffer_size": 776,
+				"buffer_size": 913,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,7 +159,7 @@
 			"file": "static/src/scss/basic_settings/_basic_settings.scss",
 			"settings":
 			{
-				"buffer_size": 623,
+				"buffer_size": 722,
 				"line_ending": "Windows"
 			}
 		},
@@ -167,7 +167,7 @@
 			"file": "static/src/scss/elements/_home.scss",
 			"settings":
 			{
-				"buffer_size": 1588,
+				"buffer_size": 2335,
 				"line_ending": "Windows"
 			}
 		},
@@ -191,7 +191,7 @@
 			"file": "static/src/scss/elements/_nav.scss",
 			"settings":
 			{
-				"buffer_size": 698,
+				"buffer_size": 1558,
 				"line_ending": "Windows"
 			}
 		},
@@ -215,7 +215,7 @@
 			"file": "static/src/scss/elements/_buttons.scss",
 			"settings":
 			{
-				"buffer_size": 514,
+				"buffer_size": 628,
 				"line_ending": "Windows"
 			}
 		}
@@ -289,20 +289,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/css_debug",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/js",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/animation",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/basic_settings",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/elements",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/responsive",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/templates"
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/pscripts",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/static",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/static/build",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/static/src",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/templates",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/templates/headphones"
 	],
 	"file_history":
 	[
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/templates/headphones/headphones_1.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/rialto_headphones/templates/headphones/headphones_0.html",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/img",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/templates/head.html",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/js/layout.js",
@@ -419,6 +417,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"order-now",
 			"lg",
 			"row-section",
 			"3",
@@ -491,7 +490,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -500,15 +499,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5451,
+						"buffer_size": 3449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1193,
-								1193
+								423,
+								423
 							]
 						],
 						"settings":
@@ -521,10 +520,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -556,7 +555,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -565,15 +564,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 841,
+						"buffer_size": 1408,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								643,
-								643
+								707,
+								707
 							]
 						],
 						"settings":
@@ -587,7 +586,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -596,15 +595,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 532,
+						"buffer_size": 642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								127,
-								156
+								0,
+								0
 							]
 						],
 						"settings":
@@ -612,13 +611,14 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -634,8 +634,8 @@
 						"selection":
 						[
 							[
-								1125,
-								1125
+								351,
+								370
 							]
 						],
 						"settings":
@@ -643,13 +643,14 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -658,15 +659,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 347,
+						"buffer_size": 2751,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								347,
-								347
+								0,
+								0
 							]
 						],
 						"settings":
@@ -692,15 +693,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3214,
+						"buffer_size": 2361,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								3214
+								2361,
+								2361
 							]
 						],
 						"settings":
@@ -708,13 +709,14 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 893.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -723,15 +725,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4585,
+						"buffer_size": 1547,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1085,
-								1085
+								145,
+								145
 							]
 						],
 						"settings":
@@ -745,10 +747,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -757,15 +759,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18988,
+						"buffer_size": 18721,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18615,
-								18615
+								0,
+								0
 							]
 						],
 						"settings":
@@ -819,7 +821,7 @@
 			]
 		},
 		{
-			"selected": 4,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -828,15 +830,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 931,
+						"buffer_size": 965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								817,
-								817
+								0,
+								0
 							]
 						],
 						"settings":
@@ -850,7 +852,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -859,19 +861,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 776,
+						"buffer_size": 913,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								298,
-								298
-							],
-							[
-								544,
-								544
+								0,
+								0
 							]
 						],
 						"settings":
@@ -894,15 +892,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 623,
+						"buffer_size": 722,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								587,
-								505
+								0,
+								0
 							]
 						],
 						"settings":
@@ -917,7 +915,7 @@
 						"translation.y": 662.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -926,15 +924,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1588,
+						"buffer_size": 2335,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1487,
-								1378
+								1802,
+								1808
 							]
 						],
 						"settings":
@@ -946,10 +944,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1596.0,
+						"translation.y": 1697.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -965,8 +963,8 @@
 						"selection":
 						[
 							[
-								799,
-								799
+								668,
+								668
 							]
 						],
 						"settings":
@@ -975,13 +973,14 @@
 							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 562.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1012,7 +1011,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -1021,15 +1020,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 698,
+						"buffer_size": 1558,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								468,
-								469
+								1486,
+								1486
 							]
 						],
 						"settings":
@@ -1037,13 +1036,14 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 415.0,
+						"translation.y": 1881.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1076,7 +1076,7 @@
 						"translation.y": 700.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1107,7 +1107,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1116,15 +1116,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 514,
+						"buffer_size": 628,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								511,
-								511
+								422,
+								422
 							]
 						],
 						"settings":
@@ -1136,10 +1136,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
