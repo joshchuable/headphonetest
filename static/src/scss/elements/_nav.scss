@@ -92,11 +92,13 @@ nav {
 				background: $white;
 				border-bottom: 1px solid $gray;
 				margin-left: 0;
+				padding-top: 12px;
+				padding-bottom: 12px;
 
 				a {
 					padding-left: 6px;
-					padding-top: 8px;
-					padding-bottom: 8px;
+					padding-top: 12px;
+					padding-bottom: 12px;
 					font-size: 24px;
 				}
 			}
