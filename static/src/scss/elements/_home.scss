@@ -82,6 +82,22 @@
 	z-index: 50;
 }
 
+.lander-title {
+	font-weight: bold;
+
+	@include screen-sm {
+		font-size: 38px;
+	}
+}
+
+.lander-subtitle {
+	font-size: 30px;
+
+	@include screen-sm {
+		font-size: 28px;
+	}
+}
+
 .section-header {
 	font-weight: bold;
 	color: $dark-text;

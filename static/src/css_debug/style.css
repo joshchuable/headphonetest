@@ -297,6 +297,24 @@ nav .menu-items {
   z-index: 50;
 }
 
+.lander-title {
+  font-weight: bold;
+}
+@media (max-width: 33.9em) {
+  .lander-title {
+    font-size: 38px;
+  }
+}
+
+.lander-subtitle {
+  font-size: 30px;
+}
+@media (max-width: 33.9em) {
+  .lander-subtitle {
+    font-size: 28px;
+  }
+}
+
 .section-header {
   font-weight: bold;
   color: #5C5555;
