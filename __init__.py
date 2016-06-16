@@ -17,8 +17,8 @@ app.config['MAIL_PASSWORD'] = 'taoist-terrier-sleeve-tingly-debate'
 # Mailer
 mail = Mail(app)
 
-namelist = {"headphones": "The Rialto Headphone Stand"}
-pricelist = {"headphones": 24.99}
+namelist = {"headphones": "The Rialto Headphone Stand", "frenchpress": "The Rialto French Press"}
+pricelist = {"headphones": 24.99, "frenchpress": 24.99}
 
 @app.route("/")
 def index():
